@@ -8,16 +8,5 @@ public class CheckEven {
         }
         return result;
 	}
-		 
-	 
-	public static void main(String[] args) {
-//		 check(5);
-		 check(4);
-		 check(2);
-//		 check(123);
-		// TODO Auto-generated method stub
-		
-
-	}
 
 }
