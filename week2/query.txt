@@ -1,0 +1,21 @@
+1. SELECT modulecode,duration FROM modules WHERE duration<6;
+
+2. SELECT batches.batchcode,batches.trainerid,batches.coursecode,batches.startdate,batches.capacity, batches.batchstrength FROM batches JOIN trainers ON trainers.trainerid=batches.trainerid AND trainers.trainername ='KRISHNAN';
+
+3.SELECT modules.modulename FROM modules JOIN courseandmodules ON modules.modulecode=courseandmodules.modulecode AND coursecode = 100;
+4. SELECT modules.modulename,courseandmodules.coursecode FROM modules JOIN courseandmodules ON modules.modulecode=courseandmodules.modulecode AND coursecode = 100;
+5. SELECT COUNT(*) AS "NumberofModules" FROM courseandmodules WHERE coursecode =100;
+
+6.
+
+7.SELECT courses.title, courses.fees FROM courses WHERE fees=(SELECT MAX(fees)FROM courses);
+
+8. SELECT * FROM students WHERE batchcode = 3001;
+
+9.SELECT * FROM students WHERE place = 'CHENNAI';
+
+10.SELECT COUNT(*) AS "LESSTHANSIXDAYS" FROM modules WHERE duration<6;
+
+11. 
+
+15. SELECT students.studentid, students.studentname FROM students JOIN batches ON batches.batchcode = students.batchcode AND batches.coursecode = 200;
