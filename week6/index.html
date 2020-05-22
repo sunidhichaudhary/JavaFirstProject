@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+    <h1 id="title_panel">The Panel</h1>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="#login" class="nav-link">Login Form</a></li>
+            <li class="nav-item"><a href="#generate-report" class="nav-link">Report Generation Table</a></li>
+            <li class="nav-item"><a href="#calculator" class="nav-link">Calculator</a></li>
+        </ul>
+    </nav>
+</head>
+<h1>Login Form</h1>
+    <form>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                autocomplete="email">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" autocomplete="current-password">
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</article>
+<article id="table_reports">
+    <h1>Table for the generated reports.</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Expression</th>
+                <th scope="col">Answer</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</article>
+<br>
+<article id="calculator">
+    <h1>Calculator</h1>
+    <form name=calculator>
+        <table name="calculator">
+            <tr>
+                <td><input type="button" value="1" onClick="document.calculator.ans.value+='1'"></td>
+                <td><input type="button" value="2" onClick="document.calculator.ans.value+='2'"></td>
+                <td><input type="button" value="3" onClick="document.calculator.ans.value+='3'"></td>
+                <td><input type="button" value="+" onClick="document.calculator.ans.value+='+'"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onClick="document.calculator.ans.value+='4'"></td>
+                <td><input type="button" value="5" onClick="document.calculator.ans.value+='5'"></td>
+                <td><input type="button" value="6" onClick="document.calculator.ans.value+='6'"></td>
+                <td><input type="button" value="-" onClick="document.calculator.ans.value+='-'"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onClick="document.calculator.ans.value+='7'"></td>
+                <td><input type="button" value="8" onClick="document.calculator.ans.value+='8'"></td>
+                <td><input type="button" value="9" onClick="document.calculator.ans.value+='9'"></td>
+                <td><input type="button" value="*" onClick="document.calculator.ans.value+='*'"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="/" onClick="document.calculator.ans.value+='/'"></td>
+                <td><input type="button" value="0" onClick="document.calculator.ans.value+='0'"></td>
+                <td><input type="button" value="="
+                        onClick=run()></td>
+                <td><input type="reset" value="Clear"></td>
+
+            </tr>
+            <tr>
+                <input id="solution" type="textfield" name="ans" value="">
+            </tr>
+        </table>
+
+    </form>
+</article>
+
+</html>
